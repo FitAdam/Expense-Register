@@ -1,4 +1,4 @@
-# Expsense Register
+# Expense Register
 
 The user will see expenses with date, type(card or cash), company, amount.
 
