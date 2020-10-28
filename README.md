@@ -4,4 +4,4 @@ The user will see expenses with date, type(card or cash), company, amount.
 
 The user can add expenses by clicking the add button.
 
-The expenses are going by displayed as a chart.
+The expenses are displayed as a chart.
