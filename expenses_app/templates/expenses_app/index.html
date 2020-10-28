@@ -1,0 +1,28 @@
+{% extends "expenses_app/base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+
+{% block content %}
+
+
+{% for expense in expenses %}
+<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+  <div class="col p-4 d-flex flex-column position-static">
+    
+    <strong class="d-inline-block mb-2 text-primary">{{ expense.company_name}}</strong>
+    <h3 class="mb-0">{{expense.currency}} {{ expense.amount }}</a></h3>
+    <div class="mb-1 text-muted">{{ expense.date_added }}</div>
+    <p class="card-text mb-auto">{{ expense.type_used }} </p>
+   
+  </div>
+  
+</div>
+
+</div>
+{% empty %}
+  <li>No expenses added.</li>
+{% endfor %}
+
+
+{% endblock content %}
